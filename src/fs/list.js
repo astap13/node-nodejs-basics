@@ -12,7 +12,7 @@ const list = async () => {
     console.log(files);
   } catch (error) {
     if (error.code === "ENOENT") {
-      console.error("Directory not found"); 
+      console.error("FS operation failed"); 
     } else {
       console.error("FS operation failed:", error.message);
     }
